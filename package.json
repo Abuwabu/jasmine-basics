@@ -1,0 +1,19 @@
+{
+  "name": "jasmine-basics",
+  "version": "1.0.0",
+  "description": "First fumblings with Jasmine — Wahaaay!",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
