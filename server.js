@@ -22,7 +22,13 @@ const PORT = 3000;
 
 // GET /
 app.get('/', function (req, res) {
-  res.send('Hello World');
+  res.send('Hello World!');
+});
+
+
+// GET /about
+app.get('/about', function (req, res) {
+  res.send('About Us');
 });
 
 
@@ -31,6 +37,8 @@ var server = app.listen(PORT, function () {
     console.log('Express server started on port ' + PORT + '...');
 });
 
+
+// Close server in tests
 exports.closeServer = function () {
   server.close();
 }
