@@ -38,16 +38,15 @@ describe('Hello World Server', function () {
         done();
       });
     });
-    
+
     it('returns About Us', function (done) {
       var aboutUrl = localUrl + 'about';
-      
+
       request.get(aboutUrl, function (error, response, body) {
         expect(body).toBe('About Us');
         helloWorld.closeServer();
         done();
       });
     });
-      
-    });
   });
+});

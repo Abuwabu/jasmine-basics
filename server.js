@@ -32,13 +32,16 @@ app.get('/about', function (req, res) {
 });
 
 
+
 // LISTEN UP...
 var server = app.listen(PORT, function () {
     console.log('Express server started on port ' + PORT + '...');
 });
 
 
-// Close server in tests
-exports.closeServer = function () {
-  server.close();
+// Export for testing
+module.exports = {
+  closeServer: function () {
+    server.close();
+  }
 }
